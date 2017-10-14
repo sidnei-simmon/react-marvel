@@ -4,8 +4,8 @@ import {Md5} from 'ts-md5/dist/md5'
 import Button from './Button'
 
 const ENDPOINT = 'http://gateway.marvel.com/v1/public/'
-const PUBLIC_KEY = '556e76e33c76074846608cbed570347b'
-const PRIVATE_KEY = '435b5e5b3e5ad35c051e60d28257c4fd4308ae00'
+const PUBLIC_KEY = ''
+const PRIVATE_KEY = ''
 const TS = Number(new Date())
 
 // md5(ts+privateKey+publicKey)

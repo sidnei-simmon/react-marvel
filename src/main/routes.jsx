@@ -1,8 +1,8 @@
 import React from 'react'
 import {Router, Route, Redirect, hashHistory} from 'react-router'
 
-import HomePage from '../template/home-page'
-import HeroPage from '../template/hero-page'
+import HomePage from '../template/homePage'
+import HeroPage from '../template/heroPage'
 
 export default props => (
     <Router history={hashHistory}>

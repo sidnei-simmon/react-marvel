@@ -19,7 +19,7 @@ class Marvel extends Component {
 
 
     handleRequest({field=null, value=null}){
-
+        
         // Parametros padrão da requisição
         const params = {            
             ts: TS,
@@ -27,22 +27,15 @@ class Marvel extends Component {
             hash: HASH
         }
 
-        /// Mecher aqui
-        //let r = `$(field)'
+       if(field!== null){
+        params[field] = value
+       }
 
-        params.r = value
-
-        console.log(params)
-
-        axios.get(ENDPOINT+'characters', {
+       return axios.get(ENDPOINT+'characters', {
             params: params
-        }).then(resp => {
-            resp.data.data.results.forEach(line =>(
-                console.log(line)
-            ))
-        }).catch(function (error) {
-            console.log(error);
-          });
+        }).then(resp => (
+            resp.data
+        )).catch(error => error);
         
     }
 

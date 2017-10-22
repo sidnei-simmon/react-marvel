@@ -1,11 +1,16 @@
 .mdl-cell {
     box-sizing: border-box;
-    background-color: #BDBDBD;
-    height: 200px;
+    /*background-color: #BDBDBD;*/
+    height: auto;
     padding-left: 8px;
     padding-top: 4px;
-    color: white;
+    /*color: white;*/
   }
   .mdl-grid:first-of-type .mdl-cell {
-    height: 50px;
+    height: auto;
+  }
+
+  .demo-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
   }
